@@ -25,4 +25,8 @@ with open(file_path, 'r', encoding='utf-8') as fp:
     
     具体配置文件的路径可以通过命令 hanlp --version 查看
     """
+    
+    parse_list = HanLP.parseDependency(content)  # 语法分析
+    print(parse_list)
+
 
